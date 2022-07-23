@@ -7,6 +7,7 @@
 }
 
 :root {
+  font-size: 14px;
   --ff-fraunces: "Fraunces", serif;
   --ff-montserrat: "Montserrat", sans-serif;
   --clr-primary-1: hsl(158, 36%, 37%);
@@ -31,4 +32,51 @@ main {
 
 .card-img-top {
   max-width: 100%;
+}
+
+.card-body {
+  padding: 1.6rem;
+}
+
+.card-body > * + * {
+  margin-top: 1.2rem;
+}
+
+.card-sub-title {
+  color: var(--clr-dark-grayish-blue);
+  font-family: var(--ff-montserrat);
+  letter-spacing: 5px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.card-title {
+  font-family: var(--ff-fraunces);
+}
+
+.card-text {
+  color: var(--clr-dark-grayish-blue);
+  font-family: var(--ff-montserrat);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.price-now {
+  color: var(--clr-primary-1);
+  font-size: 2.2rem;
+  font-family: var(--ff-fraunces);
+}
+
+.price-then {
+  font-size: 1rem;
+  font-family: var(--ff-montserrat);
+  color: var(--clr-dark-grayish-blue);
+}
+
+.btn {
+  min-width: 100%;
 }
