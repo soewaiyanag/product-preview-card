@@ -24,6 +24,7 @@ main {
 }
 
 .card {
+  max-width: 28rem;
   background-color: #fff;
   border-radius: 0.8rem;
   overflow: hidden;
@@ -97,4 +98,25 @@ main {
   font-weight: bold;
   font-family: var(--ff-montserrat);
   margin-top: 1.2rem;
+  cursor: pointer;
+  transition: background-color 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn:hover {
+  background-color: #1a4031;
+}
+
+@media screen and (min-width: 758px) {
+  .card {
+    display: grid;
+    grid-template-columns: 52% 1fr;
+    max-width: 46rem;
+  }
+  .card-body {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
